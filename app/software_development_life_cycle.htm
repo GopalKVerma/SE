@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+
+<!-- Basic -->
+<meta charset="utf-8">
+<title>Software Development Life Cycle</title>
+<meta name="description" content="Software Engineering Overview - Learn Software Engineering Concepts in simple and easy steps starting from their overview and then covering  software analysis, software requirements, software design and its complexities, interface design, software design strategies, software development life cycle, software implementation, project management, software testing  and maintenance etc." />
+<meta name="keywords" content="Software, Engineering, Tutorials,  Conccepts, simple,  easy,  steps, overview, software, analysis, requirements, design , complexities, interface,strategies, development, life, cycle, implementation, project management, testing, maintenance" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="author" content="tutorialspoint.com">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<!-- Libs CSS -->
+<link rel="stylesheet" href="/scripts/css/bootstrap.css">
+<link rel="stylesheet" href="/scripts/css/fonts/font-awesome/css/font-awesome.css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/scripts/css/theme.css">
+<link rel="stylesheet" href="/scripts/css/theme-elements.css">
+<!-- Current Page Styles -->
+<link rel="stylesheet" href="/scripts/vendor/rs-plugin/css/settings.css" media="screen">
+<!-- Skin CSS -->
+<link rel="stylesheet" href="/scripts/css/skins/green.css"/>
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/scripts/css/theme-responsive.css" />
+<!-- Head Libs -->
+<script src="/scripts/vendor/modernizr.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" href="/scripts/css/ie.css">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="/scripts/vendor/respond.js"></script>
+<![endif]-->
+<!-- Front Page related changes -->
+<link rel="stylesheet" href="/scripts/css/custom.css"/>
+<style>
+header nav ul.nav-main ul.dropdown-menu, 
+nav.mega-menu .mega-menu-signin .dropdown-menu li,
+li.heading, footer div.footer-ribon, div.footer-copyright, 
+header nav ul.nav-main li.dropdown:hover a {
+   background-color: #779a3b !important;
+}
+footer ul.list li{
+   background: none !important;
+   padding: 0px;
+}
+footer i.icon, footer ul.list.icons li i {
+   color: #779a3b !important;
+}
+</style>
+</head>
+<body>
+<div class="body">
+<header>
+<div class="container">
+<h1 class="logo">
+<a href="index.htm">
+<img alt="tutorialspoint" src="/app/images/logo.png">
+</a>
+</h1>
+<div class="search">
+<form method="get" id="searchform" name="searchform" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com"/>
+<div class="input-group">
+<input type="text" class="form-control search" name="q" id="q" placeholder="Search your tutorials..." onfocus="if (this.value == 'Search your tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your tutorials...';}">
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="hidden" name="ie" value="ISO-8859-1" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="icon icon-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+
+<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+<i class="icon icon-bars"></i>
+</button>
+</div>
+<div class="navbar-collapse nav-main-collapse collapse">
+<div class="container">
+<nav class="nav-main mega-menu">
+<ul class="nav nav-pills nav-main" id="mainMenu">
+   <li class="dropdown">
+   <a class="dropdown" href="/index.htm">
+   Home
+   <i class="icon icon-home"></i>
+   </a>
+   </li>   
+   
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="images/se-mini-logo.png" alt="QTP Tutorial" />
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">Software Engineering Tutorial</li>
+<li><a  href="/app/index.htm">Software Engineering Home</a></li>
+<li><a  href="/app/software_engineering_overview.htm">Software Engineering Overview</a></li>
+<li><a  href="/app/software_development_life_cycle.htm">Software Development Life Cycle</a></li>
+<li><a  href="/app/software_project_management.htm">Software Project Management</a></li>
+<li><a  href="/app/software_requirements.htm">Software Requirements</a></li>
+<li><a  href="/app/software_design_basics.htm">Software Design Basics</a></li>
+<li><a  href="/app/software_analysis_design_tools.htm">Analysis &amp; Design Tools</a></li>
+<li><a  href="/app/software_design_strategies.htm">Software Design Strategies</a></li>
+<li><a  href="/app/software_user_interface_design.htm">Software User Interface Design</a></li>
+<li><a  href="/app/software_design_complexity.htm">Software Design Complexity</a></li>
+<li><a  href="/app/software_implementation.htm">Software Implementation</a></li>
+<li><a  href="/app/software_testing_overview.htm">Software Testing Overview</a></li>
+<li><a  href="/app/software_maintenance_overview.htm">Software Maintenance</a></li>
+<li><a  href="/app/case_tools_overview.htm">CASE Tools Overview</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu special">
+<li class="heading">S/W Engineering Resources</li>
+<li><a  href="/app/software_engineering_interview_questions.htm">SE - Interview Questions</a></li>
+<li><a  href="/app/software_engineering_useful_resources.htm">SE - Useful Resources</a></li>
+<li><a  href="/app/software_engineering_quick_guide.htm">SE - Quick Guide</a></li>
+</ul>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Software Development Life Cycle</h1>
+
+<hr>
+<div class="pre-btn">
+<a href="/app/software_engineering_overview.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/app/software_project_management.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+
+
+<p>The Software Development Life Cycle, SDLC for short, is a well-defined, structured sequence of stages in software engineering to develop the intended software product. </p>
+<h2>SDLC Activities</h2>
+<p>SDLC provides a series of steps to be followed to design and develop a software product efficiently. SDLC framework includes the following steps:</p>
+
+<center><img src="images/sdlc.png" style="border:none;" alt="SDLC"></img></center><p></p>
+
+<h3>Communication</h3>
+
+<p>This is the first step where the user initiates the request for a desired software product.  He contacts the service provider and tries to negotiate the terms. He submits his request to the service providing organization in writing.</p>
+
+<h3>Requirement Gathering</h3>
+
+<p>This step onwards the software development team works to carry on the project. The team holds discussions with various stakeholders from problem domain and tries to bring out as much information as possible on their requirements. The requirements are contemplated and segregated into user requirements, system requirements and functional requirements. The requirements are collected using a number of practices as given - </p>
+
+<ul class="list">
+<li>Studying the existing or obsolete system and software,</li> 
+<li>conducting interviews of users and developers, </li>
+<li>referring to the database or </li>
+<li>collecting answers from the questionnaires.</li>
+</ul>
+
+<h3>Feasibility Study</h3>
+
+<p>After requirement gathering, the team comes up with a rough plan of software process. At this step the team analyzes if a software can be made to fulfill all requirements of the user and if there is any possibility of software being no more useful. It is found out, if the project is financially, practically and technologically feasible for the organization to take up. There are many algorithms available, which help the developers to conclude the feasibility of a software project.</p>
+
+<h3>System Analysis</h3>
+
+<p>At this step the developers decide a roadmap of their plan and try to bring up the best software model suitable for the project. System analysis includes Understanding of software product limitations, learning system related problems or changes to be done in existing systems beforehand, identifying and addressing the impact of project on organization and personnel etc. The project team   analyzes the scope of the project and plans the schedule and resources accordingly.</p>
+
+<h3>Software Design</h3>
+
+<p>Next step is to bring down whole knowledge of requirements and analysis on the desk and design the software product.  The inputs from users and information gathered in requirement gathering phase are the inputs of this step. The output of this step comes in the form of two designs; logical design and physical design. Engineers produce meta-data and data dictionaries, logical diagrams, data-flow diagrams and in some cases pseudo codes.</p>
+
+<h3>Coding</h3>
+
+<p>This step is also known as programming phase. The implementation of software design starts in terms of writing program code in the suitable programming language and developing error-free executable programs efficiently.</p>
+
+<h3>Testing</h3>
+
+<p>An estimate says that 50% of whole software development process should be tested. Errors may ruin the software from critical level to its own removal. Software testing is done while coding by the developers and thorough testing is conducted by testing experts at various levels of code such as module testing, program testing, product testing, in-house testing and testing the product at user's end. Early discovery of errors and their remedy is the key to reliable software.</p>
+
+<h3>Integration</h3>
+
+<p>Software may need to be integrated with the libraries, databases and other program(s). This stage of SDLC is involved in the integration of software with outer world entities.</p>
+
+<h3>Implementation</h3>
+
+<p>This means installing the software on user machines. At times, software needs post-installation configurations at user end. Software is tested for portability and adaptability and integration related issues are solved during implementation.</p>
+
+<h3>Operation and Maintenance</h3>
+
+<p>This phase confirms the software operation in terms of more efficiency and less errors. If required, the users are trained on, or aided with the documentation on how to operate the software and how to keep the software operational. The software is maintained timely by updating the code according to the changes taking place in user end environment or technology. This phase may face challenges from hidden bugs and real-world unidentified problems.</p>
+
+<h3>Disposition</h3>
+
+<p>As time elapses, the software may  decline on the performance front. It may go completely obsolete or may need intense upgradation. Hence a pressing need to eliminate a major portion of the system arises. This phase includes archiving data and required software components, closing down the system, planning disposition activity and terminating system at appropriate end-of-system time.</p>
+
+<h2>Software Development Paradigm</h2>
+
+<p>The software development paradigm helps developer to select a strategy to develop the software. A software development paradigm has its own set of tools, methods and procedures, which are expressed clearly and defines software development life cycle. A few of software development paradigms or process models are defined as follows:</p>
+
+
+<h3>Waterfall Model</h3>
+
+<p>Waterfall model is the simplest model of software development paradigm. It says the all the phases of SDLC will function one after another in linear manner. That is, when the first phase is finished then only the second phase will start and so on.</p>
+
+<center><img src="images/sdlc_waterfall.png" alt="Waterfall Model" style="border:none;"></img></center><p></p>
+
+<p>This model assumes that everything is carried out and taken place perfectly as planned in the previous stage and there is no need to think about the past issues that may arise in the next phase. This model does not work smoothly if there are some issues left at the previous step. The sequential nature of model does not allow us go back and undo or redo our actions.</p>
+
+<p>This model is best suited when developers already have designed and developed similar software in the past and are aware of all its domains. </p>
+
+<h3>Iterative Model</h3>
+
+<p>This model leads the software development process in iterations. It projects the process of development in cyclic manner repeating every step after every cycle of SDLC process.</p>
+
+<center><img src="images/sdlc_iterative.png" alt="Iterative Model" style="border:none;"></img></center><p></p>
+
+<p>The software is first developed on very small scale and all the steps are followed which are taken into consideration. Then, on every next iteration, more features and modules are designed, coded, tested and added to the software. Every cycle produces a software, which is complete in itself and has more features and capabilities than that of the previous one.</p>
+
+<p>After each iteration, the management team can do work on risk management and prepare for the next iteration. Because a cycle includes small portion of whole software process, it is easier to manage the development process but it consumes more resources.</p>
+
+<h3>Spiral Model</h3>
+
+<p>Spiral model is a combination of both, iterative model and one of the SDLC model. It can be seen as if you choose one SDLC model and combine it with cyclic process (iterative model).</p>
+
+<center><img src="images/sdlc_spiral.png" alt="Spiral Model" style="border:none;"></img></center><p></p>
+
+<p>This model considers risk, which often goes un-noticed by most other models. The model starts with determining objectives and constraints of the software at the start of one iteration. Next phase is of prototyping the software. This includes risk analysis. Then one standard SDLC model is used to build the software. In the fourth phase of the plan of next iteration is prepared.</p>
+
+<h3>V-model</h3>
+
+<p>The major drawback of waterfall model is we move to the next stage only when the previous one is finished and there was no chance to go back if something is found wrong in later stages. V-Model provides means of testing of software at each stage in reverse manner.</p>
+
+<center><img src="images/sdlc_vmodel.png" alt="V-Model" style="border:none;"></img></center><p></p>
+
+<p>At every stage, test plans and test cases are created to verify and validate the product according to the requirement of that stage. For example, in requirement gathering stage the test team prepares all the test cases in correspondence to the requirements. Later, when the product is developed and is ready for testing, test cases of this stage verify the software against its validity towards requirements at this stage.</p>
+
+<p>This makes both verification and validation go in parallel. This model is also known as verification and validation model.</p>
+
+<h3>Big Bang Model</h3>
+
+<p>This model is the simplest model in its form. It requires little planning, lots of programming and lots of funds. This model is conceptualized around the big bang of universe. As scientists say that after big bang lots of galaxies, planets and stars evolved just as an event. Likewise, if we put together lots of programming and funds, you may achieve the best software product.</p>
+
+<center><img src="images/sdlc_bigbang.png" alt="Big Bang Model" style="border:none;"></img></center><p></p> 
+
+<p>For this model, very small amount of planning is required. It does not follow any process, or at times the customer is not sure about the requirements and future needs. So the input requirements are arbitrary.</p>
+
+<p>This model is not suitable for large software projects but good one for learning and experimenting.</p>
+
+<p>For an in-depth reading on SDLC and its various models,<a href="http://www.tutorialspoint.com/sdlc/index.htm" style="color:blue" target="_blank"> click here.</a></p>
+ 
+<hr>
+<div class="pre-btn">
+<a href="/app/software_engineering_overview.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+
+<div class="nxt-btn">
+<a href="/app/software_project_management.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+
+<hr>
+<!-- PRINTING ENDS HERE -->
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<div class="translate">
+<div id="translation_widget" style="word-spacing:3px;background-color:transparent;position:relative;top:-7px;"></div>			
+</div>
+<!-- AddThis Button BEGIN -->
+
+<!-- AddThis Button END -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<p>&copy; Copyright 2014. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+<!-- Libs -->
+<script src="/scripts/vendor/jquery.js"></script>
+<script src="/scripts/js/plugins.js"></script>
+<script src="/scripts/vendor/bootstrap.js"></script>
+<script src="/scripts/vendor/twitterjs/twitter.js"></script>
+<script src="/scripts/vendor/jquery.validate.js"></script>
+<!-- Current Page Scripts -->
+<script src="/scripts/js/views/view.home.js"></script>
+<!-- Theme Initializer -->
+<script src="/scripts/js/theme.js"></script>
+<!-- Custom JS -->
+<script src="/scripts/js/custom.js"></script>
+</div>
+</body>
+</html>

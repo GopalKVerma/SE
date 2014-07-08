@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+
+<!-- Basic -->
+<meta charset="utf-8">
+<title>Software Design Complexity</title>
+<meta name="description" content="Software Engineering Overview - Learn Software Engineering Concepts in simple and easy steps starting from their overview and then covering  software analysis, software requirements, software design and its complexities, interface design, software design strategies, software development life cycle, software implementation, project management, software testing  and maintenance etc." />
+<meta name="keywords" content="Software, Engineering, Tutorials,  Conccepts, simple,  easy,  steps, overview, software, analysis, requirements, design , complexities, interface,strategies, development, life, cycle, implementation, project management, testing, maintenance" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="author" content="tutorialspoint.com">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<!-- Libs CSS -->
+<link rel="stylesheet" href="/scripts/css/bootstrap.css">
+<link rel="stylesheet" href="/scripts/css/fonts/font-awesome/css/font-awesome.css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/scripts/css/theme.css">
+<link rel="stylesheet" href="/scripts/css/theme-elements.css">
+<!-- Current Page Styles -->
+<link rel="stylesheet" href="/scripts/vendor/rs-plugin/css/settings.css" media="screen">
+<!-- Skin CSS -->
+<link rel="stylesheet" href="/scripts/css/skins/green.css"/>
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/scripts/css/theme-responsive.css" />
+<!-- Head Libs -->
+<script src="/scripts/vendor/modernizr.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" href="/scripts/css/ie.css">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="/scripts/vendor/respond.js"></script>
+<![endif]-->
+<!-- Front Page related changes -->
+<link rel="stylesheet" href="/scripts/css/custom.css"/>
+<style>
+header nav ul.nav-main ul.dropdown-menu, 
+nav.mega-menu .mega-menu-signin .dropdown-menu li,
+li.heading, footer div.footer-ribon, div.footer-copyright, 
+header nav ul.nav-main li.dropdown:hover a {
+   background-color: #779a3b !important;
+}
+footer ul.list li{
+   background: none !important;
+   padding: 0px;
+}
+footer i.icon, footer ul.list.icons li i {
+   color: #779a3b !important;
+}
+</style>
+</head>
+<body>
+<div class="body">
+<header>
+<div class="container">
+<h1 class="logo">
+<a href="index.htm">
+<img alt="tutorialspoint" src="/app/images/logo.png">
+</a>
+</h1>
+<div class="search">
+<form method="get" id="searchform" name="searchform" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com"/>
+<div class="input-group">
+<input type="text" class="form-control search" name="q" id="q" placeholder="Search your tutorials..." onfocus="if (this.value == 'Search your tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your tutorials...';}">
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="hidden" name="ie" value="ISO-8859-1" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="icon icon-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+
+<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+<i class="icon icon-bars"></i>
+</button>
+</div>
+<div class="navbar-collapse nav-main-collapse collapse">
+<div class="container">
+<nav class="nav-main mega-menu">
+<ul class="nav nav-pills nav-main" id="mainMenu">
+   <li class="dropdown">
+   <a class="dropdown" href="/index.htm">
+   Home
+   <i class="icon icon-home"></i>
+   </a>
+   </li>   
+   
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="images/se-mini-logo.png" alt="QTP Tutorial" />
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">Software Engineering Tutorial</li>
+<li><a  href="/app/index.htm">Software Engineering Home</a></li>
+<li><a  href="/app/software_engineering_overview.htm">Software Engineering Overview</a></li>
+<li><a  href="/app/software_development_life_cycle.htm">Software Development Life Cycle</a></li>
+<li><a  href="/app/software_project_management.htm">Software Project Management</a></li>
+<li><a  href="/app/software_requirements.htm">Software Requirements</a></li>
+<li><a  href="/app/software_design_basics.htm">Software Design Basics</a></li>
+<li><a  href="/app/software_analysis_design_tools.htm">Analysis &amp; Design Tools</a></li>
+<li><a  href="/app/software_design_strategies.htm">Software Design Strategies</a></li>
+<li><a  href="/app/software_user_interface_design.htm">Software User Interface Design</a></li>
+<li><a  href="/app/software_design_complexity.htm">Software Design Complexity</a></li>
+<li><a  href="/app/software_implementation.htm">Software Implementation</a></li>
+<li><a  href="/app/software_testing_overview.htm">Software Testing Overview</a></li>
+<li><a  href="/app/software_maintenance_overview.htm">Software Maintenance</a></li>
+<li><a  href="/app/case_tools_overview.htm">CASE Tools Overview</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu special">
+<li class="heading">S/W Engineering Resources</li>
+<li><a  href="/app/software_engineering_interview_questions.htm">SE - Interview Questions</a></li>
+<li><a  href="/app/software_engineering_useful_resources.htm">SE - Useful Resources</a></li>
+<li><a  href="/app/software_engineering_quick_guide.htm">SE - Quick Guide</a></li>
+</ul>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Software Design Complexity</h1>
+<hr>
+   
+<div class="pre-btn">
+<a href="/app/software_user_interface_design.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/app/software_implementation.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+
+<p>The term complexity stands for state of events or things, which have multiple interconnected links and highly complicated structures.  </p>
+
+<p>In software programming, as the design of software is realized, the number of  elements and their interconnections gradually emerge to be huge, which becomes too difficult to understand at once.</p>
+
+<p>Software design complexity  is difficult to assess without using complexity metrics and measures. </p>
+
+<p>Let us see three important software complexity measures.</p>
+<h2>Halstead's Complexity Measures</h2>
+<p>In 1977, Mr. Maurice Howard Halstead introduced metrics to measure software complexity.  Halstead's metrics depends upon the actual implementation of program and its measures, which are computed directly from the operators and operands from source code, in static manner. It allows to evaluate testing time, vocabulary, size, difficulty, errors, and efforts for C/C++/Java source code.</p>
+
+<p>According to Halstead, "A computer program is an implementation of an algorithm considered to be a collection of tokens which can be classified as either operators or operands".  Halstead metrics think a program as sequence of operators and their associated operands.</p>
+
+<p>He defines various indicators to check complexity of module.</p>
+<table class="src">
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>n1</td>
+<td>Number of unique operators</td>
+</tr>
+<tr>
+<td>n2</td>
+<td>Number of unique operands</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>Number of total occurrence of operators</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>Number of total occurrence of operands</td>
+</tr>
+</table>
+
+<p>When we select source file to view its complexity details in Metric Viewer, the following result is seen in Metric Report:</p>
+<table class="src">
+<tr>
+<th>Metric</th>
+<th>Meaning</th>
+<th>Mathematical Representation</th>
+</tr>
+<tr>
+<td>n</td>
+<td>Vocabulary</td>
+<td>n1 + n2</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Size</td>
+<td>N1 + N2</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Volume</td>
+<td>Length * Log2 Vocabulary</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Difficulty</td>
+<td>(n1/2) * (N1/n2)</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Efforts</td>
+<td>Difficulty * Volume</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Errors</td>
+<td>Volume / 3000</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Testing time</td>
+<td>Time = Efforts / S, where S=18 seconds.</td>
+</tr>
+</table>
+
+<h2>Function Point</h2>
+<p>It is widely used to measure the size of software.  Function Point concentrates on functionality provided by the system.  Features and functionality of the system are used to measure the software complexity.</p>
+
+<p>Function point counts on five parameters, named as External Input, External Output, Logical Internal Files, External Interface Files, and External Inquiry. To consider the complexity of software  each parameter is further categorized as simple, average or complex.  </p>
+<center><img src="images/function_points.png" style="border:none;" alt="Function Point" ></center>
+
+
+<p>Let us see parameters of function point -</p>
+
+<h3>External Input</h3>
+<p>  Every unique input to the system, from outside, is considered as external input.  Uniqueness of input is measured, as no two inputs should have same formats.  These inputs can either be data or control parameters.</p>
+<ul class="list">
+<li><p><b>Simple</b>: if input count is low and affects less internal files</p></li>
+<li><p><b>Complex</b>: if input count is high and affects more internal files</p></li>
+<li><p><b>Average</b>: in-between simple and complex.</p></li>
+</ul>
+<h3>External Output</h3>
+<p> All output types provided by the system are counted in this category. Output is considered unique if their output format and/or processing are unique.</p>
+<ul class="list">
+<li><p><b>Simple</b>: if output count is low</p></li>
+<li><p><b>Complex</b>: if output count is high</p></li>
+<li><p><b>Average</b>: in between simple and complex.</p></li>
+</ul>
+<h3>Logical Internal Files</h3>
+<p> Every software system maintains internal files in order to maintain its functional information and to function properly. These files hold logical data of the system.  This logical data may contain both functional data and control data.</p>
+<ul class="list">
+<li><p><b>Simple</b>: if number of record types are low</p></li>
+<li><p><b>Complex</b>: if number of record types are high</p></li>
+<li><p><b>Average</b>: in between simple and complex.</p></li>
+</ul>
+<h3>External Interface Files</h3>
+<p> Software system may need to share its files with some external software or it may need to pass the file for processing or as parameter to some function. All these files are counted as external interface files.</p>
+<ul class="list">
+<li><p><b>Simple</b>: if number of record types in shared file are low</p></li>
+<li><p><b>Complex</b>: if number of record types in shared file are high</p></li>
+<li><p><b>Average</b>: in between simple and complex.</p></li>
+</ul>
+<h3>External Inquiry </h3>
+<p> An inquiry is a combination of input and output, where user sends some data to inquire about as input and the system responds to the user with the output of inquiry processed.  The complexity of a query is more than External Input and External Output.  Query is said to be unique if its input and output are unique in terms of format and data.</p>
+<ul class="list">
+<li><p><b>Simple</b>: if query needs low processing and yields small amount of output data</p></li>
+<li><p><b>Complex</b>: if query needs high process and yields large amount of output data</p></li>
+<li><p><b>Average</b>: in between simple and complex.</p></li>
+</ul>
+<p>Each of these parameters in the system is given weightage according to their class and complexity.  The table below mentions the weightage given to each parameter:</p>
+<table class="src">
+<tr>
+<th>Parameter</th>
+<th>Simple</th>
+<th>Average</th>
+<th>Complex</th>
+</tr>
+<tr>
+<td>Inputs</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Outputs</td>
+<td>4</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Enquiry</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>7</td>
+<td>10</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Interfaces</td>
+<td>5</td>
+<td>7</td>
+<td>10</td>
+</tr>
+</table>
+<p>The table above yields raw Function Points. These function points are  adjusted according to the environment complexity. System is described using  fourteen different characteristics:</p>
+<ul class="list">
+<li>Data communications</li>
+<li> Distributed processing</li>
+<li> Performance objectives</li>
+<li> Operation configuration load</li>
+<li> Transaction rate</li>
+<li> Online data entry,</li>
+<li> End user efficiency</li>
+<li> Online update</li>
+<li> Complex processing logic</li>
+<li> Re-usability</li>
+<li> Installation ease</li>
+<li> Operational ease</li>
+<li> Multiple sites</li>
+<li> Desire to facilitate changes</li>
+</ul>
+<p>These characteristics factors are then rated from 0 to 5, as mentioned below:</p>
+<ul class="list">
+<li>No influence</li>
+<li> Incidental</li>
+<li> Moderate</li>
+<li> Average</li>
+<li>Significant</li>
+<li> Essential</li>
+</ul>
+<p>All ratings are then summed up as N. The value of N ranges from 0 to 70 (14 types of characteristics x 5 types of ratings).  It is used to calculate Complexity Adjustment Factors (CAF), using the following formulae:</p>
+<pre class="prettyprint notranslate;">
+	CAF = 0.65 + 0.01N</pre>
+<p>Then,</p>
+<pre class="prettyprint notranslate;">
+	Delivered Function Points (FP)= CAF x Raw FP
+</pre>
+<p>This FP can then be used in various metrics, such as:</p>
+<ul class="list">
+<p><b>Cost</b> = $ / FP</p>
+<p><b>Quality</b> = Errors / FP</p>
+<p><b>Productivity</b> = FP / person-month</p>
+</ul>
+<h2>Cyclomatic Complexity Measures</h2>
+<p>Every program encompasses statements to execute in order to perform some task and other decision-making statements that decide, what statements need to be executed. These decision-making constructs change the flow of the program. </p>
+
+<p>If we compare two programs of same size, the one with more decision-making statements will be more complex as the control of program jumps frequently.</p>
+
+<p>McCabe, in 1976, proposed Cyclomatic Complexity Measure to quantify complexity of a given software.  It is graph driven model that is based on decision-making constructs of program such as if-else, do-while, repeat-until, switch-case and goto statements.</p>
+
+<p>Process to make flow control graph:</p>
+<ul class="list">
+<li>Break program in smaller blocks, delimited by decision-making constructs.</li>
+<li>Create nodes representing each of these nodes.</li>
+<li>Connect nodes as follows: </li>
+<ul class="list">
+<li><p>If control can branch from block i to block j</p>
+<p> Draw an arc</p></li>
+<li><p>From exit node to entry node</p>
+<p>Draw an arc.</p></li>
+</ul>
+</ul>
+<p>To calculate Cyclomatic complexity of a program module, we use the formula -</p> 
+<pre class="prettyprint notranslate">
+	V(G) = e - n + 2
+Where
+   e is total number of edges
+   n is total number of nodes
+   </pre>
+   <center><img src="images/cyclomatic_complexity.png" style="border:none;"  alt="Cyclomatic Complexity Measures" ></center>
+<p>The Cyclomatic complexity of the above module is</p>
+<pre class="prettyprint notranslate">
+e = 10
+n = 8
+Cyclomatic Complexity = 10 - 8 + 2
+                      = 4
+</pre>
+<p>According to P. Jorgensen, Cyclomatic Complexity of a module should not exceed 10.</p>
+
+
+
+
+
+
+
+
+<hr>
+<div class="pre-btn">
+<a href="/app/software_user_interface_design.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+
+<div class="nxt-btn">
+<a href="/app/software_implementation.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+
+
+<hr>
+<!-- PRINTING ENDS HERE -->
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<div class="translate">
+<div id="translation_widget" style="word-spacing:3px;background-color:transparent;position:relative;top:-7px;"></div>			
+</div>
+<!-- AddThis Button BEGIN -->
+
+<!-- AddThis Button END -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<p>&copy; Copyright 2014. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+<!-- Libs -->
+<script src="/scripts/vendor/jquery.js"></script>
+<script src="/scripts/js/plugins.js"></script>
+<script src="/scripts/vendor/bootstrap.js"></script>
+<script src="/scripts/vendor/twitterjs/twitter.js"></script>
+<script src="/scripts/vendor/jquery.validate.js"></script>
+<!-- Current Page Scripts -->
+<script src="/scripts/js/views/view.home.js"></script>
+<!-- Theme Initializer -->
+<script src="/scripts/js/theme.js"></script>
+<!-- Custom JS -->
+<script src="/scripts/js/custom.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+
+<!-- Basic -->
+<meta charset="utf-8">
+<title>Software Engineering Overview</title>
+<meta name="description" content="Software Engineering Overview - Learn Software Engineering Concepts in simple and easy steps starting from their overview and then covering  software analysis, software requirements, software design and its complexities, interface design, software design strategies, software development life cycle, software implementation, project management, software testing  and maintenance etc." />
+<meta name="keywords" content="Software, Engineering, Tutorials,  Conccepts, simple,  easy,  steps, overview, software, analysis, requirements, design , complexities, interface,strategies, development, life, cycle, implementation, project management, testing, maintenance" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="author" content="tutorialspoint.com">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<!-- Libs CSS -->
+<link rel="stylesheet" href="/scripts/css/bootstrap.css">
+<link rel="stylesheet" href="/scripts/css/fonts/font-awesome/css/font-awesome.css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/scripts/css/theme.css">
+<link rel="stylesheet" href="/scripts/css/theme-elements.css">
+<!-- Current Page Styles -->
+<link rel="stylesheet" href="/scripts/vendor/rs-plugin/css/settings.css" media="screen">
+<!-- Skin CSS -->
+<link rel="stylesheet" href="/scripts/css/skins/green.css"/>
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/scripts/css/theme-responsive.css" />
+<!-- Head Libs -->
+<script src="/scripts/vendor/modernizr.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" href="/scripts/css/ie.css">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="/scripts/vendor/respond.js"></script>
+<![endif]-->
+<!-- Front Page related changes -->
+<link rel="stylesheet" href="/scripts/css/custom.css"/>
+<style>
+header nav ul.nav-main ul.dropdown-menu, 
+nav.mega-menu .mega-menu-signin .dropdown-menu li,
+li.heading, footer div.footer-ribon, div.footer-copyright, 
+header nav ul.nav-main li.dropdown:hover a {
+   background-color: #779a3b !important;
+}
+footer ul.list li{
+   background: none !important;
+   padding: 0px;
+}
+footer i.icon, footer ul.list.icons li i {
+   color: #779a3b !important;
+}
+</style>
+</head>
+<body>
+<div class="body">
+<header>
+<div class="container">
+<h1 class="logo">
+<a href="index.htm">
+<img alt="tutorialspoint" src="/app/images/logo.png">
+</a>
+</h1>
+<div class="search">
+<form method="get" id="searchform" name="searchform" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com"/>
+<div class="input-group">
+<input type="text" class="form-control search" name="q" id="q" placeholder="Search your tutorials..." onfocus="if (this.value == 'Search your tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your tutorials...';}">
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="hidden" name="ie" value="ISO-8859-1" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="icon icon-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+
+<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+<i class="icon icon-bars"></i>
+</button>
+</div>
+<div class="navbar-collapse nav-main-collapse collapse">
+<div class="container">
+<nav class="nav-main mega-menu">
+<ul class="nav nav-pills nav-main" id="mainMenu">
+   <li class="dropdown">
+   <a class="dropdown" href="/index.htm">
+   Home
+   <i class="icon icon-home"></i>
+   </a>
+   </li>   
+   
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="images/se-mini-logo.png" alt="QTP Tutorial" />
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">Software Engineering Tutorial</li>
+<li><a  href="/app/index.htm">Software Engineering Home</a></li>
+<li><a  href="/app/software_engineering_overview.htm">Software Engineering Overview</a></li>
+<li><a  href="/app/software_development_life_cycle.htm">Software Development Life Cycle</a></li>
+<li><a  href="/app/software_project_management.htm">Software Project Management</a></li>
+<li><a  href="/app/software_requirements.htm">Software Requirements</a></li>
+<li><a  href="/app/software_design_basics.htm">Software Design Basics</a></li>
+<li><a  href="/app/software_analysis_design_tools.htm">Analysis &amp; Design Tools</a></li>
+<li><a  href="/app/software_design_strategies.htm">Software Design Strategies</a></li>
+<li><a  href="/app/software_user_interface_design.htm">Software User Interface Design</a></li>
+<li><a  href="/app/software_design_complexity.htm">Software Design Complexity</a></li>
+<li><a  href="/app/software_implementation.htm">Software Implementation</a></li>
+<li><a  href="/app/software_testing_overview.htm">Software Testing Overview</a></li>
+<li><a  href="/app/software_maintenance_overview.htm">Software Maintenance</a></li>
+<li><a  href="/app/case_tools_overview.htm">CASE Tools Overview</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu special">
+<li class="heading">S/W Engineering Resources</li>
+<li><a  href="/app/software_engineering_interview_questions.htm">SE - Interview Questions</a></li>
+<li><a  href="/app/software_engineering_useful_resources.htm">SE - Useful Resources</a></li>
+<li><a  href="/app/software_engineering_quick_guide.htm">SE - Quick Guide</a></li>
+</ul>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Software Engineering Overview</h1>
+
+<hr>
+<div class="pre-btn">
+<a href="/app/index.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/app/software_development_life_cycle.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+
+<p>Let us first understand what software engineering stands for. The term is made of two words, software and engineering.</p>
+
+<p><b>Software </b>is more than just a program code. A program is an executable code, which serves some computational purpose. Software is considered to be collection of executable programming code, associated libraries and  documentations. Software, when made for a specific requirement is called <b>software product.</b></p>
+
+<p><b>Engineering</b> on the other hand, is all about developing products, using well-defined, scientific principles and methods.</p>
+
+<center><img class="img-responsive" src="images/software_product.png" style="border:none;" alt="Software Engineering" ></center>
+
+<p><b>Software engineering</b> is an engineering branch associated with development of software product using well-defined scientific principles, methods and procedures. The outcome of software engineering is an efficient and reliable software product.</p>
+
+<h2>Definitions</h2>
+
+<p>IEEE defines software engineering as:</p>
+
+<blockquote>
+	<p>(1)&nbsp;The application of a systematic,disciplined,quantifiable approach to the development,operation and maintenance of software; that is, the application of engineering to software.</p>
+	<p>(2)&nbsp;The study of approaches as in the above statement.</p>
+</blockquote>
+
+<p> Fritz Bauer, a German computer scientist, defines software engineering as:</p>
+
+<blockquote>
+	<p>Software engineering is the establishment and use of sound engineering principles in order to obtain economically software that is reliable and work efficiently on real machines.</p>
+</blockquote>
+
+<h2>Software Evolution</h2>
+
+<p>The process of developing a software product using software engineering principles and methods is referred to as <b>software evolution.</b> This includes the initial development of software and its maintenance and updates, till desired software product is developed, which satisfies the expected requirements.</p>
+
+<center><img src="images/software_evolution.png" style="border:none;" alt="Software Evolution" height="250" width="300"></center>
+
+
+<p>Evolution starts from the requirement gathering process. After which developers create a prototype of the intended software and show it to the users to get their feedback at the early stage of software product development.  The users suggest changes, on which several consecutive updates and maintenance keep on changing too. This process changes to the original software, till the desired software is accomplished.</p>
+
+<p>Even after the user has desired software in hand,  the advancing technology and the changing requirements force the software product to change accordingly. Re-creating software from scratch and to go one-on-one with requirement is not feasible. The only feasible and economical solution is to update the existing software so that it matches the latest  requirements.</p>
+
+<h2>Software Evolution Laws</h2>
+
+<p>Lehman has given laws for software evolution. He divided the software into three different categories:</p>
+
+<h3>S-type (static-type)</h3>
+
+<p> This is a  software, which works strictly according to defined <u>specifications and solutions.</u> The solution and the method to achieve it, both are immediately understood before coding. The s-type software is least subjected to changes hence this is the simplest of all. </p>
+
+<h4>Example </h4> <p>Calculator program for mathematical computation. </p>
+
+<h3>P-type (practical-type)</h3>
+
+<p> This is a software with a collection of <u>procedures.</u> This is defined by exactly what procedures can do. In this software, the specifications can be described but the solution is not obvious instantly.</p>
+
+<h4>Example </h4>
+
+<p> Gaming software.</p>
+
+<h3>E-type (embedded-type)</h3>
+
+<p> This software works closely as the requirement of real-world <u>environment.</u> This software has a high degree of evolution as there are various changes in laws, taxes etc. in the real world situations.</p>
+
+<h4>Example </h4><p> Online trading software.</p>
+
+<h2>E-Type software evolution </h2>
+
+<p>Lehman has given eight laws for E-Type software evolution -  </p>
+
+<h3>Continuing change</h3>
+
+<p>An E-type software system must continue to adapt to the real world changes, else it becomes progressively less  useful.</p>
+
+<h3>Increasing complexity</h3>
+
+<p>As an E-type software system evolves, its complexity tends to increase unless work is done to maintain or reduce it.</p>
+
+<h3>Conservation of familiarity</h3>
+
+<p>The familiarity with the software or the knowledge about how it was developed, why was it developed in that particular manner etc. must be retained at any cost, to implement the changes in the system.</p>
+
+<h3>Continuing growth</h3>
+
+<p>In order for an E-type system intended to resolve some business problem, its size of implementing the changes grows according to the lifestyle changes of the business.</p>
+
+<h3>Reducing quality</h3>
+
+<p>An E-type software system declines in quality unless rigorously maintained and adapted to a changing operational environment.</p>
+
+<h3>Feedback systems</h3>
+
+<p>The E-type software systems constitute multi-loop, multi-level feedback systems and must be treated as such to be successfully modified or improved.</p>
+
+<h3>Self-regulation</h3>
+
+<p>E-type system evolution processes are self-regulating with the distribution of product and process measures close to normal</p>
+
+<h3>Organizational stability</h3>
+<p>The average effective global activity rate in an evolving E-type system is invariant over the lifetime of the product.</p>
+
+<h2>Software Paradigms</h2>
+<p>Software paradigms refer to the methods and steps, which are taken while designing the software. There are many methods proposed and are in work today, but we need to see where in the software engineering these paradigms stand. These can be combined into various categories, though each of them is contained in one another:</p>
+<center><img src="images/software_paradigm.png" style="border:none;" alt="Software Evolution"></center><p></p>
+<p>Programming paradigm is a subset of Software design paradigm which is further a subset of Software development paradigm.</p>
+
+<h3>Software Development Paradigm</h3>
+<p>This Paradigm is known as software engineering paradigms where all the engineering concepts pertaining to the development of software are applied. It includes various researches and requirement gathering which helps the software product to build. It consists of - </p>
+<ul class="list">
+<li>Requirement gathering</li>
+<li>Software design </li>
+<li>Programming</li>
+</ul>
+<h3>Software Design Paradigm</h3>
+<p>This paradigm is a part of Software Development and includes - </p>
+<ul class="list">
+<li>Design </li>
+<li>Maintenance</li>
+<li> Programming</li>
+</ul>
+<h3>Programming Paradigm</h3>
+<p>This paradigm is related closely to programming aspect of software development. This includes -</p>
+<ul class="list">
+<li> Coding </li>
+<li>Testing</li>
+<li> Integration</li>
+</ul>
+
+<h2>Need of Software Engineering</h2>
+
+<p>The need of software engineering arises because of higher rate of change in user requirements and environment on which the software is working.</p>
+<h3>Large software</h3>
+<p> It is easier to build a wall than to a house or building, likewise, as the size of software become large engineering has to step to give it a scientific process.</p>
+<h3>Scalability</h3>
+<p> If the software process were not based on scientific and engineering concepts, it would be easier to re-create new software than to scale an existing one.</p>
+<h3>Cost</h3>
+<p> As hardware industry has shown its skills and huge manufacturing has lower down he price of computer and electronic hardware. But the cost of software remains high if proper process is not adapted.</p>
+<h3>Dynamic Nature</h3>
+<p> The always growing and adapting nature of software hugely depends upon the environment in which user works. If the nature of software is always changing, new enhancements need to be done in the existing one. This is where software engineering plays a good role.</p>
+<h3>Quality Management</h3>
+<p> Better process of software development provides better and quality software product.</p>
+
+<h2>Characteristics of good software</h2>
+<p>A software product can be judged  by what it offers and how well it can be used. This software must satisfy on the following grounds:</p>
+<ul class="list">
+<li>Operational</li>
+<li>Transitional</li>
+<li> Maintenance</li>
+</ul>
+<p>Well-engineered and crafted software is expected to have the following characteristics:</p>
+<h3>Operational</h3>
+<p> This tells us how well software works in operations. It can be measured on:</p>
+<ul class="list">
+<li>Budget</li>
+<li>Usability</li>
+<li>Efficiency</li>
+<li>Correctness</li>
+<li>Functionality</li>
+<li>Dependability</li>
+<li>Security</li>
+<li>Safety</li>
+</ul>
+<h3>Transitional</h3>
+<p> This aspect is important when the software is moved from one platform to another:</p>
+<ul class="list">
+<li>Portability</li>
+<li>Interoperability</li>
+<li>Reusability</li>
+<li>Adaptability</li>
+</ul>
+<h3>Maintenance</h3>
+<p> This aspect briefs about how well a software has the capabilities to maintain itself in the ever-changing environment:</p>
+<ul class="list">
+<li>Modularity</li>
+<li>Maintainability</li>
+<li>Flexibility</li>
+<li>Scalability</li>
+</ul>
+<p>In short, Software engineering is a branch of computer science, which uses well-defined engineering concepts required to produce efficient, durable, scalable, in-budget and on-time software products.</p>
+
+<hr>
+<div class="pre-btn">
+<a href="/app/index.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+
+<div class="nxt-btn">
+<a href="/app/software_development_life_cycle.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<hr>
+<!-- PRINTING ENDS HERE -->
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<div class="translate">
+<div id="translation_widget" style="word-spacing:3px;background-color:transparent;position:relative;top:-7px;"></div>			
+</div>
+<!-- AddThis Button BEGIN -->
+
+<!-- AddThis Button END -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<p>&copy; Copyright 2014. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+<!-- Libs -->
+<script src="/scripts/vendor/jquery.js"></script>
+<script src="/scripts/js/plugins.js"></script>
+<script src="/scripts/vendor/bootstrap.js"></script>
+<script src="/scripts/vendor/twitterjs/twitter.js"></script>
+<script src="/scripts/vendor/jquery.validate.js"></script>
+<!-- Current Page Scripts -->
+<script src="/scripts/js/views/view.home.js"></script>
+<!-- Theme Initializer -->
+<script src="/scripts/js/theme.js"></script>
+<!-- Custom JS -->
+<script src="/scripts/js/custom.js"></script>
+</div>
+</body>
+</html>

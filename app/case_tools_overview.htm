@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+
+<!-- Basic -->
+<meta charset="utf-8">
+<title>Software Case Tools Overview</title>
+<meta name="description" content="Software Engineering Overview - Learn Software Engineering Concepts in simple and easy steps starting from their overview and then covering  software analysis, software requirements, software design and its complexities, interface design, software design strategies, software development life cycle, software implementation, project management, software testing  and maintenance etc." />
+<meta name="keywords" content="Software, Engineering, Tutorials,  Conccepts, simple,  easy,  steps, overview, software, analysis, requirements, design , complexities, interface,strategies, development, life, cycle, implementation, project management, testing, maintenance" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="author" content="tutorialspoint.com">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<!-- Libs CSS -->
+<link rel="stylesheet" href="/scripts/css/bootstrap.css">
+<link rel="stylesheet" href="/scripts/css/fonts/font-awesome/css/font-awesome.css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/scripts/css/theme.css">
+<link rel="stylesheet" href="/scripts/css/theme-elements.css">
+<!-- Current Page Styles -->
+<link rel="stylesheet" href="/scripts/vendor/rs-plugin/css/settings.css" media="screen">
+<!-- Skin CSS -->
+<link rel="stylesheet" href="/scripts/css/skins/green.css"/>
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/scripts/css/theme-responsive.css" />
+<!-- Head Libs -->
+<script src="/scripts/vendor/modernizr.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" href="/scripts/css/ie.css">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="/scripts/vendor/respond.js"></script>
+<![endif]-->
+<!-- Front Page related changes -->
+<link rel="stylesheet" href="/scripts/css/custom.css"/>
+<style>
+header nav ul.nav-main ul.dropdown-menu, 
+nav.mega-menu .mega-menu-signin .dropdown-menu li,
+li.heading, footer div.footer-ribon, div.footer-copyright, 
+header nav ul.nav-main li.dropdown:hover a {
+   background-color: #779a3b !important;
+}
+footer ul.list li{
+   background: none !important;
+   padding: 0px;
+}
+footer i.icon, footer ul.list.icons li i {
+   color: #779a3b !important;
+}
+</style>
+</head>
+<body>
+<div class="body">
+<header>
+<div class="container">
+<h1 class="logo">
+<a href="index.htm">
+<img alt="tutorialspoint" src="/app/images/logo.png">
+</a>
+</h1>
+<div class="search">
+<form method="get" id="searchform" name="searchform" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com"/>
+<div class="input-group">
+<input type="text" class="form-control search" name="q" id="q" placeholder="Search your tutorials..." onfocus="if (this.value == 'Search your tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your tutorials...';}">
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="hidden" name="ie" value="ISO-8859-1" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="icon icon-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+
+<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+<i class="icon icon-bars"></i>
+</button>
+</div>
+<div class="navbar-collapse nav-main-collapse collapse">
+<div class="container">
+<nav class="nav-main mega-menu">
+<ul class="nav nav-pills nav-main" id="mainMenu">
+   <li class="dropdown">
+   <a class="dropdown" href="/index.htm">
+   Home
+   <i class="icon icon-home"></i>
+   </a>
+   </li>   
+   
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="images/se-mini-logo.png" alt="QTP Tutorial" />
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">Software Engineering Tutorial</li>
+<li><a  href="/app/index.htm">Software Engineering Home</a></li>
+<li><a  href="/app/software_engineering_overview.htm">Software Engineering Overview</a></li>
+<li><a  href="/app/software_development_life_cycle.htm">Software Development Life Cycle</a></li>
+<li><a  href="/app/software_project_management.htm">Software Project Management</a></li>
+<li><a  href="/app/software_requirements.htm">Software Requirements</a></li>
+<li><a  href="/app/software_design_basics.htm">Software Design Basics</a></li>
+<li><a  href="/app/software_analysis_design_tools.htm">Analysis &amp; Design Tools</a></li>
+<li><a  href="/app/software_design_strategies.htm">Software Design Strategies</a></li>
+<li><a  href="/app/software_user_interface_design.htm">Software User Interface Design</a></li>
+<li><a  href="/app/software_design_complexity.htm">Software Design Complexity</a></li>
+<li><a  href="/app/software_implementation.htm">Software Implementation</a></li>
+<li><a  href="/app/software_testing_overview.htm">Software Testing Overview</a></li>
+<li><a  href="/app/software_maintenance_overview.htm">Software Maintenance</a></li>
+<li><a  href="/app/case_tools_overview.htm">CASE Tools Overview</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu special">
+<li class="heading">S/W Engineering Resources</li>
+<li><a  href="/app/software_engineering_interview_questions.htm">SE - Interview Questions</a></li>
+<li><a  href="/app/software_engineering_useful_resources.htm">SE - Useful Resources</a></li>
+<li><a  href="/app/software_engineering_quick_guide.htm">SE - Quick Guide</a></li>
+</ul>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Software Case Tools Overview</h1>
+<hr>
+ <div class="pre-btn">
+<a href="/app/software_maintenance_overview.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/app/software_engineering_interview_questions.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+
+<p>CASE stands for Computer Aided Software Engineering. It means, development and maintenance of  software projects with help of various automated software tools.
+</p>
+<h2>CASE Tools </h2>
+
+<p>CASE tools are set of software application programs, which are used to automate SDLC activities. CASE tools are used by software project managers, analysts and engineers to develop  software system. </p>
+
+<p>There are number of CASE tools available to simplify various stages of Software Development Life Cycle such as Analysis tools, Design tools, Project management tools, Database Management tools, Documentation tools are to name a few. </p>
+
+<p>Use of CASE tools accelerates the development of project to produce desired result and helps to uncover flaws before moving ahead with next stage in software development. </p>
+<h2>Components of CASE Tools</h2>
+
+<p>CASE tools can be broadly divided into the following parts based on their use at a particular SDLC stage -</p>
+
+<h3>Central Repository</h3>
+
+<p>CASE tools require  a central repository, which can serve as a source of common, integrated and consistent information.  Central repository  is a central place of storage where product specifications, requirement documents, related reports and diagrams, other useful information regarding management is stored.  Central repository also serves as data dictionary.</p>
+
+<center><img src="images/CASEtools.png" alt="Case Tools" ></center>
+
+<h3>Upper Case Tools</h3>
+<p>Upper CASE tools are used in planning, analysis and design stages of SDLC.</p>
+
+<h3>Lower Case Tools</h3>
+
+<p>Lower CASE tools are used in implementation, testing and maintenance.</p>
+
+<h3>Integrated Case Tools</h3>
+<p>Integrated CASE tools are helpful in all the stages of SDLC, from Requirement gathering to Testing and documentation.</p>
+
+<p>CASE tools can be grouped together if they have similar functionality, process activities and capability of getting integrated with other tools. </p>
+<h2>Scope of Case Tools</h2>
+
+<p>The scope of CASE tools goes throughout the SDLC.  </p>
+
+<p>Now we briefly go through various CASE tools</p>
+
+
+<h3>Diagram tools </h3>
+<p> These tools are used to represent  system components, data and control flow among various software components and system structure in a graphical form. </p>
+
+<h4>Example </h4><p> Flow Chart Maker tool for creating state-of-the-art flowcharts.</p>
+
+<h3>Process Modeling Tools</h3>
+<p>  Process modeling is method to create software process model, which is  used to develop the software. Process modeling tools help the managers to choose a process model or modify it as per the requirement of software product.</p>
+<h4>Example </h4><p> EPF Composer</p>
+<h3>Project Management Tools</h3>
+<p> These tools are used for project planning, cost and effort estimation, project scheduling and resource planning. Managers have to strictly comply project execution with every mentioned step in software project management. Project management tools help in storing and sharing project information in real-time throughout the organization.</p>
+<h4>Example  </h4><p>Creative Pro Office, Trac Project, Basecamp.</p>
+<h3>Documentation Tools</h3>
+<p>  Documentation in a software project starts prior to the software process, goes throughout all phases of SDLC and after the completion of the project. </p>
+<p>Documentation tools generate documents for technical users and end users. Technical users are mostly in-house professionals of the development team who refer to system manual, reference manual, training manual, installation manuals etc. The end user documents describe the functioning and how-to of the system such as user manual.</p>
+<h4>Example </h4><p> Doxygen, DrExplain, Adobe RoboHelp for documentation.</p>
+               <p> SnagIT, FastStone Capture for capturing screen pictures used for making User manuals.</p>
+<h3>Analysis Tools</h3>
+<p>  These tools help to gather requirements, automatically check for any inconsistency, inaccuracy in the diagrams, data redundancies or erroneous omissions.</p>
+<h4>Example  </h4><p>Accept 360, Accompa, CaseComplete for requirement analysis, Visible Analyst for total analysis.</p>
+<h3>Design Tools </h3>
+<p> These tools help software designers to design the block structure of the software, which may further be broken down in smaller modules using refinement techniques. These tools provides detailing of each module and interconnections among modules.</p>
+<h4>Example </h4><p> Animated Software Design</p>
+<h3>Configuration Management Tools</h3>
+<p> An instance of software is released under one version.  Configuration Management tools deal with -</p>
+<ul class="list">
+<li>Version and revision management </li>
+<li>Baseline configuration management </li>
+<li>Change control management</li>
+</ul>
+
+<p>CASE tools help in this by automatic tracking, version management and release management.</p>
+<h4>Example </h4><p>Fossil, Git, Accu REV.</p>
+
+<h3>Change Control Tools</h3>
+<p> These tools are considered as a part of configuration management tools. They deal with changes made to the software after its baseline is fixed or when the software is first released. CASE tools automate change tracking, file management, code management and more. It also helps in enforcing change policy of the organization.</p>
+
+<h3>Programming Tools </h3>
+<p> These tools consist of programming environments like IDE (Integrated Development Environment), in-built modules library and simulation tools. These tools provide comprehensive aid in building software product and include features for simulation and testing.</p>
+<h4>Example  </h4><p>Cscope to search code in C, Eclipse.</p>
+<h3>Prototyping Tools </h3>
+<p>Software prototype is simulated version of the intended software product. Prototype provides initial look and feel of the product and simulates few aspect of actual product.  </p>
+<p>Prototyping CASE tools essentially come with graphical libraries. They can create hardware independent user interfaces and design. These tools help us to build rapid prototypes based on existing information. In addition, they provide simulation of software prototype.</p>
+<h4>Example </h4><p> Serena prototype composer, Mockup Builder.</p>
+<h3>Web Development Tools</h3>
+<p> These tools assist in designing web pages with all allied elements like  forms, text, script, graphic and so on. Web tools also provide live preview of what is being developed and how will it look after completion.</p>
+<h4>Example </h4><p> Fontello, Adobe Edge Inspect, Foundation 3, Brackets.</p>
+<h3>Quality Assurance Tools</h3>
+<p> Quality assurance in a software organization is monitoring the engineering process and methods adopted to develop the software product in order to ensure conformance of quality as per organization standards. QA tools consist of configuration and change control tools and software testing tools.</p>
+<h4>Example </h4> <p>SoapTest, AppsWatch, JMeter.</p>
+<h3>Maintenance Tools</h3>
+<p>  Software maintenance includes modifications in the software product after it is delivered.  Automatic logging and error reporting techniques, automatic error ticket generation and Root ecause Analysis are few CASE tools, which help software organization in maintenance phase of SDLC.</p>
+<h4>Example</h4>
+<p>Bugzilla for defect tracking, HP Quality Center.</p>
+
+<hr>
+<div class="pre-btn">
+<a href="/app/software_maintenance_overview.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+
+<div class="nxt-btn">
+<a href="/app/software_engineering_interview_questions.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+
+ 
+<hr>
+<!-- PRINTING ENDS HERE -->
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<div class="translate">
+<div id="translation_widget" style="word-spacing:3px;background-color:transparent;position:relative;top:-7px;"></div>			
+</div>
+<!-- AddThis Button BEGIN -->
+
+<!-- AddThis Button END -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<p>&copy; Copyright 2014. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+<!-- Libs -->
+<script src="/scripts/vendor/jquery.js"></script>
+<script src="/scripts/js/plugins.js"></script>
+<script src="/scripts/vendor/bootstrap.js"></script>
+<script src="/scripts/vendor/twitterjs/twitter.js"></script>
+<script src="/scripts/vendor/jquery.validate.js"></script>
+<!-- Current Page Scripts -->
+<script src="/scripts/js/views/view.home.js"></script>
+<!-- Theme Initializer -->
+<script src="/scripts/js/theme.js"></script>
+<!-- Custom JS -->
+<script src="/scripts/js/custom.js"></script>
+</div>
+</body>
+</html>

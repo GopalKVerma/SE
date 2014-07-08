@@ -1,0 +1,134 @@
+img{
+   border:0px solid #eee;
+}
+ul.urlslist{
+   list-style-type: none;
+   text-align:left;
+   margin-bottom:5px;
+   vertical-align:top;
+   border-bottom:1px dotted #aaa;
+  /* list-style-image:url("/shorttutorials/wp-content/themes/bigfoot/images/icon-bullet.png");*/
+    background: url("/shorttutorials/wp-content/themes/bigfoot/images/icon-bullet.png") no-repeat left top;
+    padding: 0px 0px 0px 20px;
+}
+ul.urlfooter{clear:left;padding-top:5px;border-top:#d5d5d5 solid 0px;margin-top:5px; margin-left: 0; padding-left: 0;}
+ul.urlfooter li.urlhits {background:url(/images/hits.gif) no-repeat left;}
+ul.urlfooter li.urlhits span {border-right:1px dotted #8A8E91;padding-right:6px;padding-left:13px;color:#484848;}
+ul.urlfooter li.urlrating{line-height:12px;float:left;padding-left:6px;color:#015BA9;padding-right:6px; border-right:1px dotted #8A8E91;}
+ul.urlfooter li.urlrating .rated {padding-right:5px;}
+ul.urlfooter li.urlrating span {float:left;}
+ul.urlfooter li {padding:0;margin:0;display:inline;float:left;line-height:12px;color:#484848;font-size:.80em; height:12px;}
+ul.urlfooter li a:hover{color:#FF0000;}
+ul.urlfooter li a:active{color:#FF0000;}
+ul.urlfooter li.urlhits {background:url(/images/hits.gif) no-repeat left;}
+ul.urlfooter li.urlhits span {border-right:1px dotted #8A8E91;padding-right:6px;padding-left:13px;color:#484848;}
+ul.urlfooter li.urlrating{line-height:12px;float:left;padding-left:4px;color:#015BA9;padding-right:6px;}
+ul.urlfooter li.urlrating .rated {padding-right:5px;}
+ul.urlfooter li.urlrating span a img{float:left;}
+ul.urlfooter li.urlrating span img{float:left;}
+ul.list li span img{float:left;}
+ul.urlfooter li.fav_category{line-height:12px;float:left;padding-left:0px;color:#015BA9;padding-right:5px; }
+ul.urlfooter li.fav_category .cat {padding-left: 3px; padding-right:3px;}
+ul.urlfooter li.fav_category .actualcat {padding-left: 0px;padding-right:5px; color:#484848; border-right:1px dotted #8A8E91;}
+ul.urlfooter li.fav_category span {float:left;}
+ul li.urlvote{border-left:1px dotted #8A8E91;padding-left:5px; padding-right:5px;}
+ul li.favorite {background:url(/images/fav.gif) no-repeat left; padding-left:15px; padding-right:5px;color:#005AA8;height:14px;line-height:12px; border-right:1px dotted #8A8E91;}
+.favorite a{color:#7F7F7F;} 
+.fav_category a{color:#7F7F7F;}
+ul.urlslist li h3{margin: 0; padding: 0;}
+ul.urlslist li h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+div.content h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* Page Numbers */
+.pages {
+    padding: 1em;
+    padding-left: 0em;
+    margin: 1em 0;
+    margin-left: 0px;
+    clear: left;
+    font-size: 85%;
+}
+.pages a, .pages span {
+    display: block;
+    float: left;
+    padding: 0.2em 0.5em;
+    margin-right: 0.1em;
+    border: 1px solid #8F8F8F;
+    background: #fff;
+}
+.pages span.current {
+    border: 1px solid #8F8F8F;
+    font-weight: bold;
+    background: #A8A8A8;
+    color: #fff;
+}
+
+.pages a {
+    border: 1px solid #A8A8A8;
+    text-decoration: none;
+}
+
+.pages a:visited {
+    color: #3300cc;
+}
+
+.pages a:hover {
+    border-color: #8F8F8F;
+}
+
+.pages a.nextprev {
+    font-weight: bold;
+}
+
+.pages span.nextprev {
+    color: #666;
+}
+
+.pages span.nextprev {
+    border: 1px solid #ddd;
+    color: #999;
+}
+.pages .nextprev-next {
+    float: right;
+}
+#topmenu a:hover {text-decoration:none;color:#aaa !important;background-color:transparent;font-weight:bold;}
+#header{ 
+   background:#c4c7c8 !important;
+   background:url(/images/footer.png) repeat-x !important; 
+}
+#topmenu
+{
+   background-color:#000 !important;
+}
+#leftcol ul.menu li.heading 
+{
+   background:#c4c7c8 !important;
+   background:url(/images/footer.png) repeat-x !important; 
+   border:1px solid #c1c1c1 !important;
+}
+#leftcol, #middlecol, #rightcol {min-height:2460px; padding:0px;}
+ul.legend li {
+  height: 22px;
+}
+fieldset.shared{
+border:1px solid #D6D6D6; padding:7px; padding-left:30px; padding-bottom:0px;
+}
+fieldset.shared li{
+   margin-bottom: 7px;
+   font-size:13px;
+}
+td.top{
+background:#eee; padding:2px;
+}
+h3{
+text-transform: capitalize !important;
+}
+.inline{
+   display:inline; vertical-align:middle; padding:5px; padding-left:0px; padding-right:0px; height:15px;
+}

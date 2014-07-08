@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+
+<!-- Basic -->
+<meta charset="utf-8">
+<title>Software Engineering Interview Questions &amp; Answers</title>
+<meta name="description" content="Software Engineering Overview - Learn Software Engineering Concepts in simple and easy steps starting from their overview and then covering  software analysis, software requirements, software design and its complexities, interface design, software design strategies, software development life cycle, software implementation, project management, software testing  and maintenance etc." />
+<meta name="keywords" content="Software, Engineering, Tutorials,  Conccepts, simple,  easy,  steps, overview, software, analysis, requirements, design , complexities, interface,strategies, development, life, cycle, implementation, project management, testing, maintenance" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="author" content="tutorialspoint.com">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<!-- Libs CSS -->
+<link rel="stylesheet" href="/scripts/css/bootstrap.css">
+<link rel="stylesheet" href="/scripts/css/fonts/font-awesome/css/font-awesome.css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="/scripts/css/theme.css">
+<link rel="stylesheet" href="/scripts/css/theme-elements.css">
+<!-- Current Page Styles -->
+<link rel="stylesheet" href="/scripts/vendor/rs-plugin/css/settings.css" media="screen">
+<!-- Skin CSS -->
+<link rel="stylesheet" href="/scripts/css/skins/green.css"/>
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/scripts/css/theme-responsive.css" />
+<!-- Head Libs -->
+<script src="/scripts/vendor/modernizr.js"></script>
+<!--[if IE]>
+<link rel="stylesheet" href="/scripts/css/ie.css">
+<![endif]-->
+<!--[if lte IE 8]>
+<script src="/scripts/vendor/respond.js"></script>
+<![endif]-->
+<!-- Front Page related changes -->
+<link rel="stylesheet" href="/scripts/css/custom.css"/>
+<style>
+header nav ul.nav-main ul.dropdown-menu, 
+nav.mega-menu .mega-menu-signin .dropdown-menu li,
+li.heading, footer div.footer-ribon, div.footer-copyright, 
+header nav ul.nav-main li.dropdown:hover a {
+   background-color: #779a3b !important;
+}
+footer ul.list li{
+   background: none !important;
+   padding: 0px;
+}
+footer i.icon, footer ul.list.icons li i {
+   color: #779a3b !important;
+}
+</style>
+</head>
+<body>
+<div class="body">
+<header>
+<div class="container">
+<h1 class="logo">
+<a href="index.htm">
+<img alt="tutorialspoint" src="/app/images/logo.png">
+</a>
+</h1>
+<div class="search">
+<form method="get" id="searchform" name="searchform" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com"/>
+<div class="input-group">
+<input type="text" class="form-control search" name="q" id="q" placeholder="Search your tutorials..." onfocus="if (this.value == 'Search your tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your tutorials...';}">
+<input value="FORID:11" name="cof" type="hidden"/>
+<input type="hidden" name="ie" value="ISO-8859-1" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="icon icon-search"></i></button>
+</span>
+</div>
+</form>
+</div>
+
+<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+<i class="icon icon-bars"></i>
+</button>
+</div>
+<div class="navbar-collapse nav-main-collapse collapse">
+<div class="container">
+<nav class="nav-main mega-menu">
+<ul class="nav nav-pills nav-main" id="mainMenu">
+   <li class="dropdown">
+   <a class="dropdown" href="/index.htm">
+   Home
+   <i class="icon icon-home"></i>
+   </a>
+   </li>   
+   
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="images/se-mini-logo.png" alt="QTP Tutorial" />
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">Software Engineering Tutorial</li>
+<li><a  href="/app/index.htm">Software Engineering Home</a></li>
+<li><a  href="/app/software_engineering_overview.htm">Software Engineering Overview</a></li>
+<li><a  href="/app/software_development_life_cycle.htm">Software Development Life Cycle</a></li>
+<li><a  href="/app/software_project_management.htm">Software Project Management</a></li>
+<li><a  href="/app/software_requirements.htm">Software Requirements</a></li>
+<li><a  href="/app/software_design_basics.htm">Software Design Basics</a></li>
+<li><a  href="/app/software_analysis_design_tools.htm">Analysis &amp; Design Tools</a></li>
+<li><a  href="/app/software_design_strategies.htm">Software Design Strategies</a></li>
+<li><a  href="/app/software_user_interface_design.htm">Software User Interface Design</a></li>
+<li><a  href="/app/software_design_complexity.htm">Software Design Complexity</a></li>
+<li><a  href="/app/software_implementation.htm">Software Implementation</a></li>
+<li><a  href="/app/software_testing_overview.htm">Software Testing Overview</a></li>
+<li><a  href="/app/software_maintenance_overview.htm">Software Maintenance</a></li>
+<li><a  href="/app/case_tools_overview.htm">CASE Tools Overview</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu special">
+<li class="heading">S/W Engineering Resources</li>
+<li><a  href="/app/software_engineering_interview_questions.htm">SE - Interview Questions</a></li>
+<li><a  href="/app/software_engineering_useful_resources.htm">SE - Useful Resources</a></li>
+<li><a  href="/app/software_engineering_quick_guide.htm">SE - Quick Guide</a></li>
+</ul>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Software Engineering Interview Questions &amp; Answers</h1>
+<hr>
+   
+   <div class="pre-btn">
+<a href="/app/case_tools_overview.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/app/software_engineering_useful_resources.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+
+<p><b>Q.What is computer software?</b></p>
+   <p> <b>A.</b> Computer software is a complete package, which includes software program, its documentation and user guide on how to use the software.</p>
+<p><b>Q.Can you differentiate computer software and computer program?</b></p>
+<p><b>A.</b> A computer program is piece of programming code which performs a well defined task where as software includes programming code, its documentation and user guide.</p>
+<p><b>Q.What is software engineering?</b></p>
+<p><b>A.</b> Software engineering is an engineering branch associated with software system development.  </p>
+<p><b>Q.When you know programming, what is the need to learn software engineering concepts?</b></p>
+<p><b>A.</b> A person who knows how to build a wall may not be good at building an entire house.  Likewise, a person who can write programs may not have knowledge of other concepts of Software Engineering.  The software engineering concepts guide programmers on how to assess requirements of end user, design the algorithms before actual coding starts, create programs by coding, testing the code and its documentation. </p>
+<p><b>Q.What is software process or Software Development Life Cycle (SDLC)?</b></p>
+<p><b>A.</b>Software Development Life Cycle, or software process is the systematic development of  software by following every stage in the development process namely, Requirement Gathering, System Analysis, Design, Coding, Testing, Maintenance and Documentation in that order. </p>
+<p><b>Q.What are SDLC models available?</b></p>
+<p><b>A.</b> There are several SDLC models available such as Waterfall Model, Iterative Model, Spiral model, V-model and Big-bang Model etc.</p>
+<p><b>Q.What are various phases of SDLC?</b></p>
+<p><b>A.</b> The generic phases of SDLC are: Requirement Gathering, System Analysis and Design, Coding, Testing and implementation. The phases depend upon the model we choose to develop software.</p>
+<p><b>Q.Which SDLC model is the best?</b></p>
+<p><b>A.</b> SDLC Models are adopted as per requirements of development process.  It may very software-to-software to ensuring which model is suitable.</p>
+<p>We can select the best SDLC model if following answers are satisfied - </p>
+<ul class="list">
+<li>Is SDLC suitable for selected technology to implement the software ?</li>
+<li>Is SDLC appropriate for client's requirements and priorities ? </li>
+<li> Is SDLC model suitable for size and complexity of the software ?</li>
+<li> Is the SDLC model suitable for type of projects and engineering we do ?</li>
+<li> Is the SDLC appropriate for the geographically co-located or dispersed developers ?</li>
+</ul>
+<p><b>Q.What is software project management?</b></p>
+<p><b>A.</b> Software project management is process of managing all activities like time, cost and quality management involved in software development.</p>
+<p><b>Q.Who is software project manager?</b></p>
+<p><b>A. </b> A software project manager is a person who undertakes the responsibility of carrying out the software project.</p>
+<p><b>Q.What does software project manager do?</b></p>
+<p><b>A. </b> Software project manager is engaged with software management activities. He is responsible for  project planning, monitoring the progress, communication among stakeholders, managing risks and resources, smooth execution of development and delivering the project within time, cost and quality contraints. </p>
+<p><b>Q.What is software scope?</b></p>
+<p><b>A.</b>  Software scope is a well-defined boundary, which encompasses all the activities that are done to develop and deliver the software product.</p>
+<p>The software scope clearly defines all functionalities and artifacts to be delivered as a part of the software. The scope identifies what the product will do and what it will not do, what the end product will contain and what it will not contain. </p>
+<p><b>Q.What is project estimation?</b></p>
+<p><b>A.</b> It is a process to estimate various aspects of software product in order to calculate the cost of development in terms of efforts, time and resources. This estimation can be derived from past experience, by consulting experts or by using pre-defined formulas.</p>
+<p><b>Q.How can we derive the size of software product?</b></p>
+<p><b>A.</b>  Size of software product can be calculated using either of two methods - </p>
+<ul class="list">
+<li>Counting the lines of delivered code  </li>
+<li>Counting delivered function points</li>
+</ul>
+<p><b>Q.What are function points?</b></p>
+<p><b>A.</b>  Function points are the various features provided by the software product.  It is considered as a unit of measurement for software size. </p>
+<p><b>Q.What are software project estimation techniques available?</b></p>
+<p><b>A.</b> There are many estimation techniques available.The most widely used are - </p>
+<ul class="list">
+<li>Decomposition technique (Counting Lines of Code and Function Points) </li>
+<li>Empirical technique (Putnam and COCOMO).</li>
+</ul>
+<p><b>Q.What is baseline?</b></p>
+<p><b>A.</b> Baseline is a measurement that defines completeness of a phase. After all activities associated with a particular phase are  accomplished, the phase is complete and acts as a baseline for next phase.</p>
+<p><b>Q.What is Software configuration management?</b></p>
+<p><b>A.</b> Software Configuration management is a process of tracking and controlling the changes in software in terms of the requirements, design, functions and development of the product.</p>
+<p><b>Q.What is change control?</b></p>
+<p><b>A.</b> Change control is function of configuration management, which ensures that all changes made to software system are consistent and made as per organizational rules and regulations.</p>
+<p><b>Q.How can you measure project execution?</b></p>
+<p><b>A.</b> We can measure project execution by means of Activity Monitoring, Status Reports and Milestone Checklists.</p>
+<p><b>Q.Mention some project management tools.</b></p>
+<p><b>A.</b> There are various project management tools  used as per the requirements of software project and organization policies.  They include Gantt Chart, PERT Chart, Resource Histogram, Critical Path Analysis, Status Reports, Milestone Checklists etc.</p>
+<p><b>Q.What are software requirements?</b></p>
+<p><b>A.</b> Software requirements are functional description of proposed software system.  Requirements are assumed to be the description of target system, its functionalities and features. Requirements convey the expectations of users from the system.</p>
+<p><b>Q.What is feasibility study?</b></p>
+<p><b>A.</b> It is a measure to assess how practical and beneficial the software project development will be for an organization. The software analyzer conducts a thorough study to  understand economic, technical and operational feasibility of the project.</p>
+<ul class="list">
+<b>Economic </b>
+<p> Resource transportation, cost for training, cost of additional utilities and tools and overall estimation of costs and benefits of the project.</p>
+<b>Technical </b>
+<p>Is it possible to develop this system ? Assessing suitability of machine(s) and operating system(s) on which software will execute, existing developers' knowledge and skills, training, utilities or tools for project.</p>
+<b>Operational </b>
+<p> Can the organization adjust smoothly to the changes done as per the demand of project ? Is the problem worth solving ? </p>
+</ul>
+<p><b>Q.How can you gather requirements?</b></p>
+<p><b>A.</b>  Requirements can be gathered from users via interviews, surveys, task analysis, brainstorming, domain analysis, prototyping, studying existing usable version of software, and by observation. </p>
+<p><b>Q.What is SRS?</b></p>
+<p><b>A.</b>  SRS or Software Requirement Specification is a document produced at the time of requirement gathering process. It can be also seen as a process of refining requirements and documenting them.</p>
+<p><b>Q.What are functional requirements?</b></p>
+<p><b>A.</b> Functional requirements are functional features and specifications expected by users from the proposed software product.</p>
+<p><b>Q.What are non-functional requirements?</b></p>
+<p><b>A.</b>  Non-functional requirements are implicit and are related to security, performance, look and feel of user interface, interoperability, cost etc.</p>
+<p><b>Q.What is software measure?</b></p>
+<p><b>A.</b> Software Measures can be understood as a process of quantifying and symbolizing various attributes and aspects of software.</p>
+<p><b>Q.What is software metric?</b></p>
+<p><b>A.</b> Software Metrics provide measures for various aspects of software process and software product. They are divided into -</p>
+<ul class="list">
+<li>Requirement metrics : Length requirements, completeness </li>
+<li> Product metrics :Lines of Code, Object oriented metrics, design and test metrics</li>
+<li> Process metrics: Evaluate and track budget, schedule, human resource.</li>
+</ul>
+<p><b>Q.What is modularization?</b></p>
+<p><b>A.</b>  Modularization is a technique to divide a software system into multiple discreet modules, which are expected to  carry out task(s) independently.</p>
+<p><b>Q.What is concurrency and how it is achieved in software?</b></p>
+<p><b>A.</b> Concurrency is the tendency of events or actions to happen simultaneously. In software, when two or more processes execute simultaneously, they are called concurrent processes. </p>
+
+<p><h3>Example </h3> While you initiate print command and printing starts, you can open a new application. </p>
+
+<p>Concurrency,  is implemented by splitting the software into multiple independent units of execution namely processes and threads, and  executing them in parallel.</p>
+<p><b>Q.What is cohesion?</b></p>
+<p><b>A.</b> Cohesion is a measure that defines the degree of intra-dependability among the elements of the module.</p>
+<p><b>Q.What is coupling?</b></p>
+<p><b>A.</b> Coupling is a measure that defines the level of inter-dependability among modules of a program.</p>
+<p><b>Q.Mentions some software analysis & design tools?</b></p>
+<p><b>A.</b> These can be: DFDs (Data Flow Diagrams), Structured Charts, Structured English, Data Dictionary, HIPO (Hierarchical Input Process Output) diagrams, ER (Entity Relationship) Diagrams and Decision tables.</p>
+<p><b>Q.What is level-0 DFD?</b></p>
+<p><b>A.</b> Highest abstraction level DFD is known as Level 0 DFD also called a context level DFD, which depicts the entire information system as one diagram concealing all the underlying details.</p>
+<p><b>Q.What is the difference between structured English and Pseudo Code?</b></p>
+<p><b>A.</b> Structured English is native English language used to write the structure of a program module  by using programming language keywords, whereas, Pseudo Code is more close to programming language and uses native English language words or sentences to write parts of code.</p>
+<p><b>Q.What is data dictionary?</b></p>
+<p><b>A.</b> Data dictionary  is referred to as meta-data. Meaning, it is a repository of data about data. Data dictionary is  used to organize the names and their references used in system such as objects and files along with their naming conventions.</p>
+<p><b>Q.What is structured design?</b></p>
+<p><b>A.</b> Structured design is a conceptualization of problem into several well-organized elements of solution. It is concern with the solution design and based on 'divide and conquer' strategy.</p>
+<p><b>Q.What is the difference between function oriented and object oriented design?</b></p>
+<p><b>A.</b> Function-oriented design is comprised of many smaller sub-systems known as functions.  Each function is capable of performing significant task in the system. Object oriented design works around the real world objects (entities), their classes (categories) and methods operating on objects (functions).</p>
+<p><b>Q.Briefly define top-down and bottom-up design model.</b></p>
+<p><b>A.</b> Top-down model starts with generalized view of system and decomposes it to more specific ones, whereas bottom-up model starts with most specific and basic components first and keeps composing the components to get higher level of abstraction.</p>
+<p><b>Q.What is the basis of Halstead's complexity measure?</b></p>
+<p><b>A.</b> Halstead's complexity measure depends up on the actual implementation of the program and it considers tokens used in the program as basis of measure.</p>
+<p><b>Q.Mention the formula to calculate Cyclomatic complexity of a program?</b></p>
+<p><b>A.</b> Cyclomatic complexity uses graph theory's formula: V(G) = e - n + 2</p>
+<p><b>Q.What is functional programming?</b></p>
+<p><b>A.</b> Functional programming is style of programming language, which uses the concepts of mathematical function.  It provides means of computation as mathematical functions, which produces results irrespective of program state.</p>
+<p><b>Q.Differentiate validation and verification?</b></p>
+<p><b>A.</b> Validation checks if the product is made as per user requirements whereas verification checks if proper  steps are followed to develop the product. </p>
+<p>Validation confirms the right product and verification confirms if the product is built in a right way.</p>
+<p><b>Q.What is black-box and white-box testing?</b></p>
+<p><b>A.</b>  Black-box testing checks if the desired outputs are produced when valid input values are given. It does not verify the actual implementation of the program.</p>
+
+<p>White-box testing not only checks for desired and valid output when valid input is provided but also it checks if the code is implemented correctly. </p>
+<table class="src">
+<tr>
+<th>Criteria</th>
+<th>Black Box Testing</th>
+<th>White Box Testing</th>
+</tr>
+<tr>
+<td>Knowledge of software program, design and structure essential</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Knowledge of Software Implementation essential</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Who conducts this test on software</td>
+<td>Software Testing Employee</td>
+<td>Software Developer</td>
+</tr>
+<tr>
+<td>baseline reference for tester</td>
+<td>Requirements specifications</td>
+<td>Design and structure details </td>
+</tr>
+</table>
+<p><b>Q.Quality assurance vs. Quality Control?</b></p>
+<p><b>A.</b> Quality Assurance monitors to check if proper process is followed while software developing the software.</p>
+    
+<p>Quality Control deals with maintaining the quality of software product.</p>
+<p><b>Q.What are various types of software maintenance?</b></p>
+<p><b>A.</b>   Maintenance types are: corrective, adaptive, perfective and preventive.</p>
+<ul class="list">
+<li><b>Corrective </b>
+<p> Removing errors spotted by users</p></li>s
+
+<li><b>Adaptive </b>
+<p> tackling the changes in the hardware and software environment where the software works </p></li>
+
+<li><b>Perfective maintenance</b>
+<p> implementing changes in existing or new requirements of user</p></li>
+
+<li><b>Preventive maintenance</b>
+<p> taking appropriate measures to avoid future problems</p></li>
+</ul>
+
+<p><b>Q.What is software re-engineering?</b></p>
+<p><b>A.</b> Software re-engineering is process to upgrade the technology on which the software is built without changing the functionality of the software. This is done in order to keep the software tuned with the latest technology.</p>
+<p><b>Q.What are CASE tools?</b></p>
+<p><b>A.</b> CASE stands for Computer Aided Software Engineering. CASE tools are set of automated software application programs, which are used to support, accelerate and smoothen the SDLC  activities.</p>
+<hr>
+<div class="pre-btn">
+<a href="/app/case_tools_overview.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+
+<div class="nxt-btn">
+<a href="/app/software_engineering_useful_resources.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+
+   
+<hr>
+<!-- PRINTING ENDS HERE -->
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<div class="translate">
+<div id="translation_widget" style="word-spacing:3px;background-color:transparent;position:relative;top:-7px;"></div>			
+</div>
+<!-- AddThis Button BEGIN -->
+
+<!-- AddThis Button END -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<p>&copy; Copyright 2014. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+<!-- Libs -->
+<script src="/scripts/vendor/jquery.js"></script>
+<script src="/scripts/js/plugins.js"></script>
+<script src="/scripts/vendor/bootstrap.js"></script>
+<script src="/scripts/vendor/twitterjs/twitter.js"></script>
+<script src="/scripts/vendor/jquery.validate.js"></script>
+<!-- Current Page Scripts -->
+<script src="/scripts/js/views/view.home.js"></script>
+<!-- Theme Initializer -->
+<script src="/scripts/js/theme.js"></script>
+<!-- Custom JS -->
+<script src="/scripts/js/custom.js"></script>
+</div>
+</body>
+</html>

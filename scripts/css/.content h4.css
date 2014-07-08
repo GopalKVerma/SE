@@ -1,0 +1,11 @@
+<style>
+.content h4 {
+font-size: 1.0em;
+font-weight: bold;
+line-height: 1.5em;
+text-transform: uppercase;
+color: #000;
+position: relative;
+/* left: 7px; */
+}
+</style>
